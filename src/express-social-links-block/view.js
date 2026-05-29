@@ -22,34 +22,41 @@
 import { createRoot } from '@wordpress/element';
 import SocialsListRenderer from './socialsListRender';
 
-
 /* eslint-disable no-console */
 // console.log( 'Hello World! (from Express Social Links block)' );
 /* eslint-enable no-console */
 
 const viewExpressSocials = () => {
-    // Locate all block instances on the page that haven't been rendered yet and render them
-    document.querySelectorAll( '.express-social-links-item-container:not([data-rendered="true"])' ).forEach( ( container ) => {
-        try {
-            const payload = JSON.parse( container.dataset.config || '{}' );
-            const hasSocials = payload.social?.some( row => row.label || row.logo );
-            
-            // Skip block rendering if it's set to be hidden or has no social links
-            if ( ! payload.showHideSocials || ! hasSocials ) {
-                container.remove();
-                return;
-            }
-            // Render the React component into the container
-            createRoot( container ).render( <SocialsListRenderer socialData={ payload } /> );
-            container.dataset.rendered = 'true';
-        } catch ( err ) {
-            console.error( 'Express Social Links Render Error:', err );
-        }
-    } );
+	// Locate all block instances on the page that haven't been rendered yet and render them
+	document
+		.querySelectorAll(
+			'.express-social-links-item-container:not([data-rendered="true"])'
+		)
+		.forEach( ( container ) => {
+			try {
+				const payload = JSON.parse( container.dataset.config || '{}' );
+				const hasSocials = payload.social?.some(
+					( row ) => row.label || row.logo
+				);
+
+				// Skip block rendering if it's set to be hidden or has no social links
+				if ( ! payload.showHideSocials || ! hasSocials ) {
+					container.remove();
+					return;
+				}
+				// Render the React component into the container
+				createRoot( container ).render(
+					<SocialsListRenderer socialData={ payload } />
+				);
+				container.dataset.rendered = 'true';
+			} catch ( err ) {
+				console.error( 'Express Social Links Render Error:', err );
+			}
+		} );
 };
 // Run the rendering function on initial page load and whenever new content is loaded (e.g., via AJAX)
 if ( document.readyState === 'loading' ) {
-    document.addEventListener( 'DOMContentLoaded', viewExpressSocials );
+	document.addEventListener( 'DOMContentLoaded', viewExpressSocials );
 } else {
-    viewExpressSocials();
+	viewExpressSocials();
 }
