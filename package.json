@@ -1,5 +1,5 @@
 {
-	"name": "express-social-links",
+	"name": "marcellus-social-profile-links",
 	"version": "0.1.0",
 	"description": "A simple social media sharing plugin for your WordPress site.",
 	"author": "Marcel Oketch",
@@ -23,10 +23,10 @@
 		"@wordpress/scripts": "^32.2.0"
 	},
 	"files": [
-		"assets/",
+		"images/",
 		"build/",
 		"includes/",
-		"express-social-links.php",
+		"marcellus-social-profile-links.php",
 		"*.txt",
 		"*.php",
 		"languages/",

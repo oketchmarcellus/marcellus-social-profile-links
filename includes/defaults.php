@@ -1,6 +1,6 @@
 <?php
 /**
- * Default configurations and helper function for Marcels Easy Socials
+ * Default configurations and helper function for Marcellus Social profile links
  */
 
 
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return array Default settings schema.
  */
-function express_social_links_get_default_settings() {
+function marcellus_social_profile_links_get_default_settings() {
     return array(
         'social'          => array(
             array(
@@ -38,4 +38,4 @@ function express_social_links_get_default_settings() {
 }
 
 // Return the function name so the main file knows it is successfully loaded
-return 'express_social_links_get_default_settings';
+return 'marcellus_social_profile_links_get_default_settings';

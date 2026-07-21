@@ -1,17 +1,17 @@
-=== Express Social Links ===
+=== Marcellus Social Profile Links ===
 Contributors:      marcellus89
 Tags:              social media, links, logo, icons, share
 Tested up to:      7.0
 Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-GitHub Plugin URI: https://github.com/oketchmarcellus/express-social-links/
+GitHub Plugin URI: https://github.com/oketchmarcellus/marcellus-social-profile-links/
 
 A social media plugin for adding dynamic social media profile links and custom logos to your WordPress website.
 
 == Description ==
 
-Boost your website engagement with Express Social Links, a lightweight and modern social media sharing plugin built specifically for the WordPress block editor (Gutenberg). 
+Boost your website engagement with Marcellus Social Profile Links, a lightweight and modern social media sharing plugin built specifically for the WordPress block editor (Gutenberg). 
 Easily add beautiful, responsive social sharing buttons to any post, page, or widget area without slowing down your site.
 
 = Key Features =
@@ -22,14 +22,14 @@ Easily add beautiful, responsive social sharing buttons to any post, page, or wi
 
 
 = Search Keywords =
-social links, social sharing, share buttons, social icons, block editor, gutenberg block, express social links, share post
+social links, social sharing, share buttons, social icons, block editor, gutenberg block, marcellus social profile links, share post
 
 
 == Installation ==
 
 1. Upload the plugin folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Navigate to 'Express Socials links' in your sidebar to configure.
+3. Navigate to 'Marcellus Social Profile links' in your sidebar to configure.
 
 == Technical Details ==
 
@@ -41,8 +41,8 @@ It utilizes the following core libraries and technologies:
 * WordPress Internationalization (@wordpress/i18n): Provides localization utilities to make the plugin fully translatable.
 * WordPress Scripts (@wordpress/scripts): Drives the build system, code formatting, and asset packaging.
 
-* [View on GitHub](https://github.com/oketchmarcellus/express-social-links/)
-* [Report Issues](https://github.com/oketchmarcellus/express-social-links/issues)
+* [View on GitHub](https://github.com/oketchmarcellus/marcellus-social-profile-links/)
+* [Report Issues](https://github.com/oketchmarcellus/marcellus-social-profile-links/issues)
 * [Follow the Developer](https://github.com/oketchmarcellus/)
 
 
@@ -57,7 +57,7 @@ More options to be added to both the global settings and inside block editor.
 
 = Are page builders like Elementor and the Classic Editor supported? =
 
-No. Express Socials Links is currently supported only in the Gutenberg editor. These will soon also be added to the editor.
+No. Marcellus Social Profile Links is currently supported only in the Gutenberg editor. These will soon also be added to the editor.
 
 == Screenshots ==
 
@@ -88,9 +88,9 @@ Ensure you have the following installed on your machine:
 
 = Dev Installation & Setup =
 1. Clone or move this plugin folder into your local WordPress installations directory:
-   `/wp-content/plugins/express-social-links`
+   `/wp-content/plugins/marcellus-social-profile-links`
 2. Open your terminal and navigate to the plugin root directory:
-   cd /path/to/wp-content/plugins/express-social-links
+   cd /path/to/wp-content/plugins/marcellus-social-profile-links
 3. Install the required development dependencies:
    npm install
 
@@ -115,4 +115,4 @@ Ensure you have the following installed on your machine:
 = Testing Changes =
 1. Activate the plugin via the WordPress Admin Dashboard.
 2. Open a post or page in the Block Editor (Gutenberg).
-3. Search for "Express Social Links" in the block inserter menu.
+3. Search for "Marcellus Social Profile Links" in the block inserter menu.

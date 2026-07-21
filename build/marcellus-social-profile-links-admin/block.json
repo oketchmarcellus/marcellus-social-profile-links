@@ -1,0 +1,5 @@
+{
+  "apiVersion": 3,
+  "name": "marcellus-social-profile-links/marcellus-social-profile-links-admin",
+  "editorScript": "file:./index.js"
+}

@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-function express_social_links_sanitize_payload( $input ) {
+function marcellus_social_profile_links_sanitize_payload( $input ) {
     if ( ! is_array( $input ) ) {
         return array();
     }
