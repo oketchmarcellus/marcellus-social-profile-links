@@ -34,7 +34,7 @@ const SocialsPreview = ( { socialData } ) => {
 				} }
 			>
 				{ __(
-					'Marcellus Social Profile Links Preview',
+					'Social Profile Links Preview',
 					'marcellus-social-profile-links'
 				) }
 			</h3>
@@ -63,7 +63,7 @@ const SocialsPreview = ( { socialData } ) => {
 					>
 						❌{ ' ' }
 						{ __(
-							'Marcellus Social Profile Links block display is toggled hidden.',
+							'Social Profile Links block display is toggled hidden.',
 							'marcellus-social-profile-links'
 						) }
 					</p>

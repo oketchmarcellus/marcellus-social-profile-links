@@ -27,8 +27,13 @@ const SocialsPanel = ( { socialData, setSocialData } ) => {
 		}
 
 		const frame = window.wp.media( {
-			title: __( 'Select or Upload Media', 'marcellus-social-profile-links' ), // Updated text domain
-			button: { text: __( 'Use this media', 'marcellus-social-profile-links' ) },
+			title: __(
+				'Select or Upload Media',
+				'marcellus-social-profile-links'
+			), // Updated text domain
+			button: {
+				text: __( 'Use this media', 'marcellus-social-profile-links' ),
+			},
 			multiple: false,
 		} );
 
@@ -188,7 +193,10 @@ const SocialsPanel = ( { socialData, setSocialData } ) => {
 									color: '#50575e',
 								} }
 							>
-								{ __( 'Socio Icon', 'marcellus-social-profile-links' ) }
+								{ __(
+									'Socio Icon',
+									'marcellus-social-profile-links'
+								) }
 							</label>
 						</FlexItem>
 						<Flex className="marcellus-social-profile-links-field-inputs-column">
@@ -240,7 +248,10 @@ const SocialsPanel = ( { socialData, setSocialData } ) => {
 					icon={ plus }
 					onClick={ addRepeaterRow }
 				>
-					{ __( 'Add New Social Link', 'marcellus-social-profile-links' ) }
+					{ __(
+						'Add New Social Link',
+						'marcellus-social-profile-links'
+					) }
 				</Button>
 			</Flex>
 			<style>

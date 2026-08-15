@@ -68,7 +68,10 @@ const SettingsPage = () => {
 				},
 			} );
 			createSuccessNotice(
-				__( 'Settings saved successfully!', 'marcellus-social-profile-links' ),
+				__(
+					'Settings saved successfully!',
+					'marcellus-social-profile-links'
+				),
 				{
 					type: 'snackbar',
 				}
@@ -108,7 +111,10 @@ const SettingsPage = () => {
 	if ( ! socialData ) {
 		return (
 			<div className="welcome-panel" style={ { padding: '20px' } }>
-				{ __( 'Loading settings...', 'marcellus-social-profile-links' ) }
+				{ __(
+					'Loading settings...',
+					'marcellus-social-profile-links'
+				) }
 			</div>
 		);
 	}
@@ -119,7 +125,10 @@ const SettingsPage = () => {
 			title: (
 				<div className="tab-label">
 					<span>
-						{ __( 'SOCIAL LINKS', 'marcellus-social-profile-links' ) }
+						{ __(
+							'SOCIAL LINKS',
+							'marcellus-social-profile-links'
+						) }
 					</span>
 					<Dashicon icon="share" style={ { marginLeft: '10px;' } } />
 				</div>
@@ -130,7 +139,10 @@ const SettingsPage = () => {
 			title: (
 				<div className="tab-label">
 					<span>
-						{ __( 'GLOBAL SETTINGS', 'marcellus-social-profile-links' ) }
+						{ __(
+							'GLOBAL SETTINGS',
+							'marcellus-social-profile-links'
+						) }
 					</span>
 					<Dashicon
 						icon="admin-generic"
@@ -143,7 +155,9 @@ const SettingsPage = () => {
 			name: 'about',
 			title: (
 				<div className="tab-label">
-					<span>{ __( 'ABOUT', 'marcellus-social-profile-links' ) }</span>
+					<span>
+						{ __( 'ABOUT', 'marcellus-social-profile-links' ) }
+					</span>
 					<Dashicon icon="search" style={ { marginLeft: '10px;' } } />
 				</div>
 			),
@@ -162,7 +176,10 @@ const SettingsPage = () => {
 				className="wp-heading-inline"
 				style={ { marginBottom: '20px' } }
 			>
-				{ __( 'Social profile Links Settings', 'marcellus-social-profile-links' ) }
+				{ __(
+					'Social profile Links Settings',
+					'marcellus-social-profile-links'
+				) }
 			</h1>
 			<hr className="wp-header-end" />
 
@@ -270,7 +287,10 @@ const SettingsPage = () => {
 						disabled={ isSaving }
 						onClick={ handleSave }
 					>
-						{ __( 'Save Settings', 'marcellus-social-profile-links' ) }
+						{ __(
+							'Save Settings',
+							'marcellus-social-profile-links'
+						) }
 					</Button>
 				</Flex>
 			</Panel>

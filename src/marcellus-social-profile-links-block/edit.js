@@ -126,7 +126,10 @@ export default function Edit( { attributes, setAttributes } ) {
 			{ /* Sidebar Settings Control Panel */ }
 			<InspectorControls>
 				<PanelBody
-					title={ __( 'Display Options', 'marcellus-social-profile-links' ) }
+					title={ __(
+						'Display Options',
+						'marcellus-social-profile-links'
+					) }
 					initialOpen={ true }
 				>
 					<ToggleControl
